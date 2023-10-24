@@ -1,0 +1,110 @@
+@media(max-width:102.4375em){
+    /* 102.4375=1639 */
+    .learn-more{
+        margin: 2.2rem;
+        margin-left: 0rem;
+    }
+    
+    .section1-heading{
+        font-size: 3.2rem;
+        word-spacing: 10px;
+    }
+
+    .delivered-meal{
+        margin-top: 2rem;
+    }
+}
+
+
+
+@media(max-width:90em){
+    /* /1440 */
+    .delivered-meals{
+     gap: 10.5rem;
+     margin-top: 0rem;
+    }
+
+    .logo-container{
+        padding: 9.6rem 3rem;
+    }
+    .meal-info-container{
+        padding: 4.2rem 0rem;
+    }
+    .tag{
+        margin: 0rem 0.8rem;
+    }
+    .paleo{
+        margin: 0rem 0rem;
+    }
+    .ticks{
+        gap: 1.5rem;
+    }
+    
+}
+
+@media(max-width:64em){
+    /* 1024 */
+    *{
+        max-width: 150%;
+    }
+    .logos{
+        width: 150px;
+    }
+    .heading-primary{
+        font-size: 5.2rem;
+        font-weight: 700;
+        line-height: 1.05;
+        color: #333;
+        letter-spacing: -3.5px;
+        margin-bottom: 4.8rem;
+        text-align: center;
+    }
+    html{
+        font-size: 60%;
+    }
+    .hero{
+        grid-template-columns: 1fr;
+    }
+    .hero-img{
+        width: 70%;
+        padding-left: 20rem;
+        left: 50%;
+
+
+    }
+    
+
+    .buttons2{
+        width: auto;
+        align-items: center;
+        margin-left: 250px;
+
+    }
+    .testimonial-img{
+        width: 200px;
+    } 
+    .gallery{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .testimonials{
+        margin-top: 8rem;
+    }
+} 
+
+@media(max-width:55em){
+    .main-nav-list-link:link,
+    .main-nav-list-link:visited{
+        font-size: 3rem;
+    }        
+
+    *{
+        max-width: 150%;
+    }
+    .testimonial-img{
+        width: 180px;
+    }
+    /* .btn-mobile-nav{
+        display: block;
+    } */
+    
+}

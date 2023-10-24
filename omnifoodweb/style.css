@@ -1,0 +1,982 @@
+
+
+/*
+
+~~~~ 01 typography system 
+SPACING SYSTEM = 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64
+/80 /96 /128
+
+font-weight:
+default: 400
+
+
+line height:
+default:1
+
+~~color
+primary : #e67e22
+
+tints:
+shades:
+accents:
+greys:#555 #333
+
+
+
+font size - system= 10/ 12/ 14/ 16 /20 /24/ 30 /36/44/ 
+52/62/74/86/98
+*/
+
+
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body{
+    font-family:"Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+}
+
+
+
+
+.section-hero{
+    background-color: #fdf2e9;
+    padding: 4.8rem  0  9.6rem 0;
+
+}
+.hero{
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+
+}
+strong{
+    font-weight: 600;
+}
+/********************** General reusable components************/
+.heading-primary{
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #333;
+    letter-spacing: -3.5px;
+    margin-bottom: 4.8rem;
+}
+.btn,
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    background-color: #e67e22;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 0.9rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 300ms;
+    border:none;
+    cursor: pointer;
+    font-family: inherit;
+}
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    background-color: #e67e22;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 300ms;
+}
+
+.btn--full:link,
+.btn--full:visited{
+    background-color:#e67e22;
+    color: #fff;
+    margin-right: 1.6rem !important;
+}
+
+
+.btn--full:hover,
+.btn--full:active{
+    background-color:#cf711f;
+}
+
+.btn--outline:link,
+.btn--outline:visited{
+    background-color:#fff;
+    color: #555;
+}
+
+
+.btn--outline:hover,
+.btn--outline:active{
+    background-color:#fdf2e9;
+    box-shadow: inset 0 0 0 3px #fff;
+}
+/*********************************************************************/
+/******                    HEADER        ****************/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf2e9;
+
+    height: 9.6rem;
+    padding: 0 4.8rem;
+}
+
+
+.logo{
+    height: 2.2rem;
+    
+}
+
+.main-nav-list{
+    list-style: none;
+    display: flex;
+    gap: 3.2rem;
+}
+
+/* ******************************************************* */
+/* Mobile navigation */
+
+.btn-mobile-nav{
+    display: block;
+}
+
+.icon-mobile-nav[name="menu-outline"]{
+    display: block;
+}
+
+.main-nav{
+    background-color: rgb(255, 255, 255,0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    
+}
+
+.icon-mobile-nav[name="close-outline"]{
+    display: none;
+}
+
+.main-nav-list{
+    flex-direction: column;
+    gap: 4.8rem;
+
+}
+
+
+.main-nav-list-link{
+    font-size :4.2rem;
+    padding: 1rem 3rem;
+}
+
+
+/* ***************************************** */
+/* nav is open  */
+
+.btn-mobile-nav{
+    border: none;
+    background-color: #fdf2e9;
+    cursor: pointer;
+    display:none;
+
+}
+
+
+.icon-mobile-nav{
+    height: 4.2rem;
+    width: 4.2rem;
+    color: #555;
+}
+
+.icon-mobile-nav[name="menu-outline"]{
+    display: block;
+}
+
+
+
+/* ******************************************* */
+
+
+
+/* ********************************************************** */
+
+
+
+
+
+
+.main-nav-list-link:link,
+.main-nav-list-link:visited{
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    transition: all 300ms;
+}
+
+.main-nav-list-link:active,
+.main-nav-list-link:hover{
+    color: #e67e22;
+}
+
+.nav-link:link,
+.nav-link:visited{
+    padding: 1rem 3rem;
+    border-radius: 0.9rem;
+    background-color: #e67e22;
+    color: #fff;
+    transition: all 300ms;
+}
+
+.nav-link:active,
+.nav-link:hover{
+    background-color: #cf711f;
+
+}
+
+
+
+
+
+
+
+
+/************************************************************************/
+/*********************       HERO SECTION ************************************/
+.hero-description{
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+}
+
+
+.hero-img{
+    width: 100%;
+}
+
+.delivered-meals{
+    display: flex;
+    align-items: center;
+    gap: 5.2rem;
+    margin-top: 8rem;
+}
+
+.delivered-imgs{
+    display: flex;
+}
+
+.delivered-imgs img{
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid #fdf2e9;
+}
+
+span{
+    color: #cf711f;
+    font-weight: 500;
+    font-size: 24px;
+}
+.delivered-imgs img:last-child{
+    margin: 0;
+}
+.delivered-text{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 2.0rem;
+}
+
+/********************************************************************/
+/********************************************************************/
+/**********        SECTION - HOW   **********************************/
+
+
+.section-how{
+    background-color: #faf1e9;
+    padding: 9.6rem 0;
+
+}
+
+
+.container{
+        max-width: 120rem;
+        padding: 3.6rem 3.2rem;
+        margin: 0 auto;
+}
+
+
+.grid{
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 0rem;
+}
+
+.grid--2--col{
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+
+.grid--3--col{
+    grid-template-columns: repeat(3,1fr);
+
+}
+.grid--5--col{
+    grid-template-columns: repeat(5,1fr);
+
+}
+.step-img{
+    width: 37.5%;
+}
+
+.step-img-box{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+
+.sub-heading{
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    color: #cf711f;
+}
+
+.heading-secondary{
+    font-size: 4.8rem;
+    color: #333;
+    padding-left: 0;
+}
+
+.step-text-box{
+    padding-bottom: 6.4rem;
+}
+.heading-tertiary{
+    font-size: 3.2rem;
+    color: #333;
+    padding-bottom: 2.4rem;
+}
+.step-description{
+    font-size: 1.6rem;
+    line-height: 2;
+    font-weight: 500;
+}
+.step-number{
+    font-size: 7.4rem;
+    color: #cccccc;
+    font-weight: 600;
+    padding-bottom: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+/********************************************************************/
+/********************************************************************/
+
+
+/********************************************************************/
+/********************************************************************/
+/**********        logo-container   **********************************/
+
+.logo-container{
+    filter:brightness(0);
+    opacity: 60%;
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 9.6rem 9.6rem;
+}
+.logo-text{
+    font-weight: 500;
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 2rem;
+}
+
+.logos-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.logos{
+    width: 250px;
+    color: 	#D3D3D3;
+}
+
+
+
+
+
+
+
+
+
+/********************************************************************/
+/********************************************************************/
+
+
+
+/********************************************************************/
+/********************************************************************/
+/**********        meals-heading   **********************************/
+
+.sub-heading-space{
+    margin-top: 5rem;
+    padding-bottom: 0.2rem;
+}
+
+.heading-for-meals{
+    font-size: 4.2rem;
+    color: #333;
+    font-weight: 700;
+
+}
+.meal-pic{
+    /* width: 500px; */
+    max-width: 110%;
+}
+.name-of-meal{
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    padding: 0.4rem 0.8rem;
+
+}
+
+.Avocado-Salad{
+    padding-left: 1.5rem;
+    word-spacing: 0.6rem;
+}
+.meal{
+    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.4s;
+    
+
+}
+.tag{
+    display: inline-block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #333;
+    padding: 0.4rem 0.8rem;
+    background-color: #2db73e;
+    border-radius: 100px;
+    margin:  0rem 0rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.6rem;
+}
+.vegan{
+    background-color: #76c35d;
+}
+.paleo{
+    background-color: #f89d69;
+}
+
+.list-of-japanesemeals{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.002rem;
+    font-size: 1.6rem;
+    margin-bottom: 2.2rem;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+
+}
+.meal-info-container{
+    padding: 4.2rem 4.2rem;
+}
+strong{
+    font-weight: 500;
+}
+
+.sticker{
+    color: #cf711f;
+    font-size: 34px;
+}
+
+.food-critic{
+    padding: 0.4rem 0.8rem;
+}
+
+.ticks{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    font-size: 1.6rem;
+}
+
+.contain{
+    word-spacing: 1rem;
+    padding-left: 1.2rem;
+    padding-bottom: 3.2rem;
+
+}
+.meal:hover{
+    transform:translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0,0,0,0.13);
+    
+}
+
+.all-recipe{
+    color: #cf711f;
+    font-size: 26px;
+    padding-left: 50rem;    
+}
+
+.all-recipe:hover,
+.all-recipe:active{
+    color: #cf711f;
+    font-size: 28px;
+    text-decoration: none;
+    padding-left: 50rem;
+    transition: all 0.25s;
+}
+/********************************************************************/
+/********************************************************************/
+
+
+/********************************************************/
+/*********************testimonial**********************/
+
+.testimonial-section{
+    background-color: #faf1e9;
+}
+
+.testimonial-parts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.part1-testimonial{
+    padding: 14rem 2.4rem;
+}
+
+.secondary-heading{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding-left: 5.2rem;
+  
+}
+
+.heading-secondary{
+    padding-top: 1.4rem;
+    /* padding-left: 5.2rem; */
+}
+
+
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 6.2rem;
+    gap: 4rem;
+}
+
+.testimonial{
+    padding-left: 5.2rem;
+}
+.pic-of-customer{
+    width: 115px;
+    border-radius: 50%;
+
+}
+
+.testimonial-text,
+.testimonial-name{
+    color: #555;
+    font-size: 2rem;
+}
+
+.testimonial-text{
+    color: #333;
+    line-height:3.2rem;
+}
+
+.testimonial-name{
+    color: #555;
+    font-size: 1.6rem;
+    padding: 1.5rem 0;
+}
+.part2-testimonial{
+    padding: 2rem 1rem;
+}
+
+.testimonial-img{
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+.testimonial-img:hover{
+    transform:scale(1.1);
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+.testimonial-img{
+    width: 389px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+/********************************************************/
+/********************************************************/
+
+
+
+
+
+/********************************************************/
+/********************meal-section pricing****************/
+li{
+    list-style: none;
+}
+
+.list-item{
+    list-style: none;
+    font-size: 24px;
+}
+
+.list-icon{
+    color: #cf711f;
+    font-size: 24px;
+}
+.list-item{
+    margin-bottom:1.2rem ;
+}
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.princing-plan {
+  border-radius: 11px;
+
+  width: 63.8%;
+}
+
+.margin-bottom-md{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.princing-plan--starter {
+  justify-self: end;
+  border: 3.5px solid #fdf2e9;
+  padding: 4.6rem;
+}
+
+.princing-plan--complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.princing-plan--complete::after {
+  content: "Best value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+    color: #333;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-sing-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.feature{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/********************************************************/
+/********************************************************/
+
+
+
+
+/********************************************************/
+/********************cta section{ call to action}****************/
+
+.cta-section{
+    padding: 9.6rem 0;
+}
+
+.cta{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #e67e22;
+    height: 50rem;
+    box-shadow: 0 2.4rem 4.8rem rgb(0, 0, 0,0.15);
+    border-radius: 11px;
+    background-image: linear-gradient(to right bottom,#eb984e,#e67e22);
+}
+
+.cta-text-box{
+    color: #45260a;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    padding-bottom: 0px;
+}
+.cta-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+.cta,
+.heading-secondary{
+    color: #45260a;
+    margin-bottom: 3.2rem;
+}
+.cta-img{ 
+    background-image: linear-gradient(to right bottom,
+    rgba(235, 151, 78, 0.35),
+    rgba(230, 125, 34, 0.35)),url(eating.jpg); 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.cta-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+
+.cta-form label{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+.cta-form input,
+.cta-form select{
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fdf2ed;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgb(0, 0, 0,0.22);
+}
+
+*:focus{
+    outline: none;
+}
+
+.btn--form{
+    background-color: #45260a;
+    padding: 1.2rem;
+    align-self: flex-end;
+    color: #fdf2e9;
+}
+.btn--form:active,
+.btn--form:hover{
+    background-color: #fdf2e9;
+    color: #333;
+    transition: all 0.3s;
+}
+/********************************************************/
+/********************************************************/
+
+
+
+/********************************************************/
+/*******************footer*******************************/
+
+
+.footer{
+    padding: 9.6rem 0;
+    border: 1   px solid #ddd;
+}
+
+.social-links{
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+}
+.social-icons{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+.footer-logo{
+    display: block;
+    margin-bottom: 3.2rem;
+}
+.footer-heading{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+}
+
+.logo-col{
+    display: flex;
+    flex-direction: column;
+}
+.copyright{
+    margin-top: auto;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    color: #767676;
+}
+.footer-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-links{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.3s;
+}
+
+.footer-links:hover,
+.footer-links:active{
+    color: #555;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    font-size: 1.6rem;
+    font-style: none;
+    line-height: 1.6;
+}
+
+.contacts:first-child{
+    font-style: normal;
+}
+
+
+
+
+/********************************************************/
+/********************************************************/
